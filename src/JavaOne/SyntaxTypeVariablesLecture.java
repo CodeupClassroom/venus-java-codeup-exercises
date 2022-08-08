@@ -40,7 +40,7 @@ public class SyntaxTypeVariablesLecture {
         System.out.println();
         //Final is a way to set up constants = similar rules in declaring/initializing + will give a CTE if we try to reassign
 
-        final String myName = "Kenneth Andrew Howell";
+        final String myName = "Kenneth Berserker Howell";
 
 //        myName = "Jenneth Pandrew Powell";
 

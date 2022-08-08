@@ -18,7 +18,11 @@
         In reality, it can be ok to do so
     
 #### Static field naming conventions
-    Screaming Snake-case
+    not yet
+
+#### When to make a function static
+    1. Builder function (we will see these later)
+    2. Utility functions that don't need to save state between function calls (like Math.abs)
 
 #### The POTENTIAL problem with worldPopulation example
     making data static to share it among Person instances
