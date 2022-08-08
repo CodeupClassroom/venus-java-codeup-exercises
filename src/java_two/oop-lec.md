@@ -18,7 +18,8 @@
         In reality, it can be ok to do so
     
 #### Static field naming conventions
-    not yet
+    camelCase is fine. 
+    we are not yet ready to talk about constants
 
 #### When to make a function static
     1. Builder function (we will see these later)
