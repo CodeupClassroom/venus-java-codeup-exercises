@@ -1,6 +1,6 @@
 ### Arrays
     important facts
-        static size
+        fixed size
         homogeneous element types
 
 ### Declaring
