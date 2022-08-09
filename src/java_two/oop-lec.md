@@ -26,14 +26,14 @@
     2. Utility functions that don't need to save state between function calls (like Math.abs)
 
 #### The POTENTIAL problem with worldPopulation example
-    making data static to share it among Person instances
+    making data static to share it among java_two.oo_exercise.Person instances
     what if we needed to track moon pop. or mars pop.?
     isn't world population a characteristic of an instance of a world?
     BUT... when do you design too much?
         REQUIREMENTS and SPECIFICATIONS!
 
 ### Constructors
-    Go back to the Person code and clean it up
+    Go back to the java_two.oo_exercise.Person code and clean it up
 
 #### Overloaded constructors
 

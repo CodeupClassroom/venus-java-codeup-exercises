@@ -15,7 +15,7 @@ public class Person {
     }
 
     public Person() {
-        this("Default", "Person");
+        this("Default", "java_two.oo_exercise.Person");
     }
 
     public String sayHello() {

@@ -26,12 +26,12 @@
     for i
     for each
         print the elements in the array
-        now is a good time for the toString method with Person!
+        now is a good time for the toString method with java_two.oo_exercise.Person!
 
 ### Arrays helper class
     fill
     equals 
-        now MAY be a good time to override Person .equals
+        now MAY be a good time to override java_two.oo_exercise.Person .equals
     copyOf
     toString
     sort
