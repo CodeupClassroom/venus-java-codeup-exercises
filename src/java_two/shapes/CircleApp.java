@@ -15,7 +15,8 @@ public class CircleApp {
             System.out.println(circle.getCircumference());
 
             // ask user if they want to keep making circles
-            if(!input.yesNo("Do you want to keep making circles? yes/no ")) {
+            boolean keepMakingCircles = input.yesNo("Do you want to keep making circles? yes/no ");
+            if(keepMakingCircles == false) {
                 break;
             }
         }
