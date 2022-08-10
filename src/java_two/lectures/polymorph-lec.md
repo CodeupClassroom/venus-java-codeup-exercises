@@ -1,15 +1,4 @@
 ### Inheritance 
-    terms:
-        super class or type
-        sub class or type
-
-    extends = inherits
-    
-    why inheritance?
-        share code and/or fields (DRY: avoid duplicating things)
-        the relationships between objects can be useful in your program
-            REFLECTION: we can ask a class if it has a particular ancestor at runtime
-            we can also restrict variables, arrays and array-like things to only work with a FAMILY of classes
 
     show example of class inheriting from another class
         maybe Bird and Duck 
@@ -24,6 +13,20 @@
         show NOT having a duck constructor
         duck constructor should call the bird constructor
 
+
+    terms:
+        super class or type
+        sub class or type
+
+    extends = inherits
+    
+    why inheritance?
+        share code and/or fields (DRY: avoid duplicating things)
+        the relationships between objects can be useful in your program
+            REFLECTION: we can ask a class if it has a particular ancestor at runtime
+            we can also restrict variables, arrays and array-like things to only work with a FAMILY of classes
+
+
     now add some new stuff for ducks
         swim speed field
         and swim method
@@ -32,7 +35,7 @@
 
     now make a rubber duck subclass
         override quack
-        overrude eat
+        override eat
         and a no arg constructor that sets fly and swim speeds to 0
 
     show protected vs private visibility

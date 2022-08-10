@@ -4,8 +4,6 @@ package java_two.array_exercise.movies;
 // TODO: change this to wherever your Input class is located
 import docrob.util.Input;
 
-import java.util.Arrays;
-
 public class MoviesApplication {
     public static final int INVALID_CHOICE = -1;
     public static final int EXIT_CHOICE = 0;
