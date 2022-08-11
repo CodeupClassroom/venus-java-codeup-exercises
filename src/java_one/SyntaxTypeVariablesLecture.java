@@ -1,4 +1,4 @@
-package JavaOne;
+package java_one;
 
 public class SyntaxTypeVariablesLecture {
 
