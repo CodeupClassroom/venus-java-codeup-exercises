@@ -28,10 +28,23 @@ public class EmployeeMain {
         sally.liftHeavyObject("the Rock");
         heavyLifter.liftHeavyObject("the Other Rock");
 
-        // ask sally some questions about herself
-        System.out.println("bob is an employee: " + (bob instanceof Employee));
-//        System.out.println("sally is an employee: " + (sally instanceof Manager));
-        System.out.println("bob is an employee: " + (bob instanceof Accountant));
-        System.out.println("bob is an employee: " + (bob instanceof HeavyLifter));
+        Employee [] peons = new Employee[3];
+        peons[0] = new Accountant("Bob", "Accounting");
+        peons[1] = new Salesperson("Sally", "Sales");
+        peons[2] = new Manager("Ragnar", "Management");
+
+        // iterate over the peons and ask what they are and if they can lift heavy things
+        // if they can lift heavy things, then make them do that
+        for (Employee peon : peons) {
+            System.out.println("Analyzing " + peon.getName());
+            System.out.println("\tIs " + peon.getName() + " an accountant? " + (peon instanceof Accountant));
+            System.out.println("\tIs " + peon.getName() + " an salesperson? " + (peon instanceof Salesperson));
+            System.out.println("\tIs " + peon.getName() + " an manager? " + (peon instanceof Manager));
+            System.out.println("\tCan " + peon.getName() + " lift heavy things? " + (peon instanceof HeavyLifter));
+            if(peon instanceof HeavyLifter) {
+                HeavyLifter lifter = (HeavyLifter) peon;
+                lifter.liftHeavyObject("something heavy");
+            }
+        }
     }
 }
