@@ -53,7 +53,7 @@
 #### Making folders and files
 
     Paths.get(String first, String... more)
-
+    
     use Paths to get a Path object for a directory that exists
 
     use Paths to get a Path object for a file that exists
