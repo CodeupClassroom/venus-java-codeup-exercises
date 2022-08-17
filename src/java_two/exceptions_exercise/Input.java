@@ -22,7 +22,29 @@ public class Input {
     }
 
     public int getInt() {
-        return scanner.nextInt();
+//        return scanner.nextInt();
+
+        // 2. TRY to convert the string into an int using parseInt
+//        while(true) {
+            // 1. get user input as a string
+            String userInput = getString();
+
+            try {
+                int userInt = Integer.parseInt(userInput);
+
+                // 3. if successful, return the int
+                return userInt;
+            } catch (NumberFormatException e) {
+                // 4. else output an error msg to user
+                System.out.println("\nThis isn't int. :(");
+
+            }
+//        }
+            return getInt();
+
+        // 5. keep doing this until we can get an int (use a loop OR recursion)
+
+
     }
 
     public int getInt(int min, int max, String prompt) {
@@ -43,7 +65,20 @@ public class Input {
     }
 
     public double getDouble() {
-        return scanner.nextDouble();
+        String userInput = getString();
+
+        try {
+            double userDouble = Double.parseDouble(userInput);
+
+            // 3. if successful, return the int
+            return userDouble;
+        } catch (NumberFormatException e) {
+            // 4. else output an error msg to user
+            System.out.println("\nDoubtful it's a double. :|");
+
+        }
+//        }
+        return getDouble();
     }
 
     public double getDouble(double min, double max) {
