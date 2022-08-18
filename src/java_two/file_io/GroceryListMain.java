@@ -10,13 +10,13 @@ public class GroceryListMain {
         GroceryList groceryList = new GroceryList();
 
         GroceryItem naranjas = new GroceryItem("Oranges", 5);
-        GroceryItem beer = new GroceryItem("Dos Equis", 24);
+        GroceryItem cervezas = new GroceryItem("Dos Equis", 24);
         GroceryItem tocino = new GroceryItem("Bacon", 10);
 
         // add the items to the list
         groceryList.addGroceryItem(naranjas);
         groceryList.addGroceryItem(tocino);
-        groceryList.addGroceryItem(beer);
+        groceryList.addGroceryItem(cervezas);
 
         groceryList.printItems();
 
@@ -34,6 +34,8 @@ public class GroceryListMain {
         GroceryList list2 = GroceryListGateway.readFromFile();
         System.out.println("list2's contents");
         list2.printItems();
+
+        System.out.println(list2.toStringList());
 
     }
 }

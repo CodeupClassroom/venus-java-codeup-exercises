@@ -65,6 +65,8 @@ public class GroceryListGateway {
         }
     }
 
+    // does everything for the data file and its contain directory
+    // and returns the Path object we need to work with the data file
     private static Path getFilePath() {
         try {
             Path folder = Paths.get("grocery_list");

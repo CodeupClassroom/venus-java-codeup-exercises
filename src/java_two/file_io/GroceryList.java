@@ -46,7 +46,7 @@ public class GroceryList {
             String itemNameInList = item.getName();
             if(itemNameInList.equalsIgnoreCase(itemName)) {
                 // we found it in the list so save its index
-                index = i;
+                return i;
             }
         }
         return index;
