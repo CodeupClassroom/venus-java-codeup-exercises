@@ -1,2 +1,2 @@
-Oranges : 5
+Oranges : 12
 Dos Equis : 24

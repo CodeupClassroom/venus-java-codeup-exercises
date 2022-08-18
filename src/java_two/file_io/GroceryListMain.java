@@ -23,7 +23,17 @@ public class GroceryListMain {
         groceryList.removeGroceryItem("Bacon");
         groceryList.printItems();
 
-        groceryList.saveToFile();
+        groceryList.setItemQuantity("Oranges", 12);
+        GroceryItem anItem = groceryList.getItemByName("Oranges");
+        System.out.println(anItem);
+
+        anItem = groceryList.getItemByName("Tangerines");
+
+        GroceryListGateway.writeToFile(groceryList);
+
+        GroceryList list2 = GroceryListGateway.readFromFile();
+        System.out.println("list2's contents");
+        list2.printItems();
 
     }
 }
