@@ -53,4 +53,18 @@
 
     @BeforeClass and @AfterClass
 
-## Skip over TDD and go to Testing Legacy Code
+## work thru TDD example 
+
+    explain hashing and show example for protecting passwords
+    
+    figure out the code
+
+## work thru Testing Legacy Code
+
+    talk about how to test the Kitchen class
+        what should we test???
+
+    figure out the code
+
+## exercise
+    may not want to fork. may want to BEAR clone
