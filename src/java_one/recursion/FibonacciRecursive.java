@@ -4,7 +4,7 @@ public class FibonacciRecursive {
     /*
     f(n) = f(n-1) + f(n-2)
      */
-    public static int fib(int n) {
+    public static long fib(int n) {
         if(n == 0) {
             return 0;
         }
@@ -16,7 +16,7 @@ public class FibonacciRecursive {
 
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
-        System.out.println(fib(42));
+        System.out.println(fib(10));
 
         System.out.println("Time in ms = " + (System.currentTimeMillis() - start));
     }

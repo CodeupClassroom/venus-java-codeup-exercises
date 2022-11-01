@@ -13,7 +13,7 @@ public class FibonacciBinet {
 
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
-        System.out.println(fib(200000));
+        System.out.println(fib(10));
 
         System.out.println("Time in ms = " + (System.currentTimeMillis() - start));
     }

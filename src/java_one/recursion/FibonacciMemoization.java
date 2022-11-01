@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class FibonacciMemoization {
     private static final int MAX_FIB_NUMBER = 50000;
 
-    private static long [] memoTable = new long[MAX_FIB_NUMBER];
+    private static final long [] memoTable = new long[MAX_FIB_NUMBER];
     /*
     f(n) = f(n-1) + f(n-2)
      */
@@ -33,7 +33,7 @@ public class FibonacciMemoization {
 //        System.out.println(Arrays.toString(memoTable));
 
         long start = System.currentTimeMillis();
-        System.out.println(fib(11500));
+        System.out.println(fib(10));
 
         System.out.println("Time in ms = " + (System.currentTimeMillis() - start));
     }
